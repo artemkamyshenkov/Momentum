@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>momentum</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="player">
+        <div class="player-controls">
+          <audio class="audio" src="./assets/sounds/Aqua Caelestis.mp3"></audio>
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="audio-title"></div>
+        <div class="progress__container">
+          <div class="progress"></div>
+        </div>
+
+        <div class="volume-container">
+          <i class="fa fa-volume-down"></i>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="99"
+            class="volume-slider"
+            onchange="setVolume()"
+          />
+          <i class="fa fa-volume-up"></i>
+        </div>
+
+        <div class="audio__time_container">
+          <div class="audio-time"></div>
+          <div class="audio-duration"></div>
+        </div>
+        <ul class="play-list">
+          <li class="play-item">Aqua Caelestis</li>
+          <li class="play-item">Ennio Morricone</li>
+          <li class="play-item">River Flows In You</li>
+          <li class="play-item">Summer Wind</li>
+        </ul>
+      </div>
+      <div class="weather">
+        <input
+          type="text"
+          class="city"
+          placeholder="[Your city]"
+          value="Минск"
+        />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon"></button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="text" class="name" placeholder="[Enter name]" />
+      </div>
+      <div class="focus-container">
+        <h2 class="focus-title">What is your main focus ToDay?</h2>
+        <textarea
+          class="focus-area"
+          cols="30"
+          rows="5"
+          placeholder="[Enter Focus]"
+        ></textarea>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="quotes__container">
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+      <button class="change-quote"></button>
+      <button class="setting"></button>
+      <div class="setting__container">
+        <button class="setting__close">X</button>
+        <div class="setting__element">
+          <ul class="elements">
+            <li>
+              <input
+                type="checkbox"
+                id="audio__setting"
+                name="audio__setting"
+              />
+              <label for="audio__setting">audio</label>
+            </li>
+            <li>
+              <input type="checkbox" id="time__setting" name="time__setting" />
+              <label for="time__setting">time</label>
+            </li>
+            <li>
+              <input type="checkbox" id="date__setting" name="date__setting" />
+              <label for="date__setting">date</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="greeting__setting"
+                name="greeting__setting"
+              />
+              <label for="greeting__setting">greeting</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="weather__setting"
+                name="weather__setting"
+              />
+              <label for="weather__setting">weather</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="quotes__setting"
+                name="quotes__setting"
+              />
+              <label for="quotes__setting">quotes</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="choose__bacground">
+          <p>Background</p>
+          <button class="github">Github</button>
+          <button class="unsplash">Unsplash</button>
+          <button class="flickr">Flickr</button>
+        </div>
+        <div class="lang">
+          <p class="lang">Lang</p>
+          <button class="ru">Russian</button>
+          <button class="en">English</button>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
