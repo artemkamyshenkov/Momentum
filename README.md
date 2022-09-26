@@ -1,4 +1,4 @@
-# Momentum
+# :star: Momentum :star:
 This only Vanilla JS app is an analogue of the Chrome Web Store [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca) application with the same name.
 ## Key Features:
 + New inspiring photo, quote, and mantra each day;
@@ -20,4 +20,5 @@ This app is created with:
 ### Deployment link is [here](https://momentum-app-artem-kamyshenkov.netlify.app/)
 Enjoy! :smile:
 
+(This is my first app) :v:
 ![Screenshot_1](https://user-images.githubusercontent.com/104526360/192330782-44489183-feda-4515-bdfa-05b6559f7e9d.png)
